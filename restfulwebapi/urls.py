@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'restfulwebapi.views.home', name='home'),
+    url(r'^$', 'restfulwebapi.views.home', name='home'),
     # url(r'^restfulwebapi/', include('restfulwebapi.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -14,4 +14,6 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+    
+    url(r'^films/', include('films.urls', namespace="films")),
 )
