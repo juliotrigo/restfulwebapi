@@ -2,6 +2,8 @@
 
 """Director."""
 
+from __future__ import unicode_literals
+
 from django.db import models
 
 from films.models.commoninfo import CommonInfo
@@ -27,7 +29,7 @@ class FilmDirector(models.Model):
     director = models.ForeignKey('Director')
     
     def __unicode__(self):
-        return self.film + " by " + self.director
+        return '%s by %s' % (self.film, self.director)
     
     class Meta:
         app_label = 'films'

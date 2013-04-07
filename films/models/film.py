@@ -2,6 +2,8 @@
 
 """Film."""
 
+from __future__ import unicode_literals
+
 from django.db import models
 
 from films.models.commoninfo import CommonInfo
