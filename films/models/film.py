@@ -14,6 +14,7 @@ class Film(CommonInfo):
     
     title = models.CharField(max_length=100)
     year = models.IntegerField(help_text="Film release date.")
+    running_length = models.IntegerField()
     
     def __unicode__(self):
         return self.title
