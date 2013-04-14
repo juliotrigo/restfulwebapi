@@ -1,0 +1,18 @@
+{% extends "films/base_films.xhtml" %}
+
+{% block content %}
+    <h1>Films!</h1>
+    
+    <table>
+        <tr>
+            <th>Title</th>
+        </tr>
+        {% for film in films %}
+            <tr>
+                <td>{{ film.title }}</td>
+            </tr>
+        {% empty %}
+            <tr>There are not any films.</tr>
+        {% endfor %}
+    </table>
+{% endblock %}

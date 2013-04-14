@@ -22,6 +22,7 @@ class Film(CommonInfo):
     class Meta:
         app_label = 'films'
         index_together = [['year'],]
+        ordering = ['title']
 
 class OrderedFilm(Film):
     

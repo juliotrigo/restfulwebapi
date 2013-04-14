@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, url
 
-from films import views
-
-urlpatterns = patterns('',
-    url(r'^$', views.index, name='index')
+urlpatterns = patterns('films',
+    url(r'^$', 'views.index', name='index'),
+    url(r'^films/$', 'views.films', {'id': None}, name='films_all'),
+    url(r'^films/(?P<id>\d+)/$', 'views.films', name='films_id')
 )

@@ -15,5 +15,5 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     
-    url(r'^films/', include('films.urls', namespace="films")),
+    url(r'^films/', include('films.urls', namespace='films', app_name='films')),
 )
