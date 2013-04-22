@@ -1,0 +1,1 @@
+from restfulwebapi.settings.development import *
