@@ -1,1 +1,1 @@
-from restfulwebapi.settings.development import *
+from restfulwebapisite.settings.development import *
