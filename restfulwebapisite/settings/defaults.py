@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'films',
+    'restfulwebapi',
 )
 
 # A sample logging configuration. The only tangible logging
