@@ -6,8 +6,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'restfulwebapi.views.home', name='home'),
-    # url(r'^restfulwebapi/', include('restfulwebapi.foo.urls')),
+    url(r'^$', 'restfulwebapisite.views.home', name='home'),
+    # url(r'^restfulwebapisite/', include('restfulwebapisite.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

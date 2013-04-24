@@ -1,4 +1,4 @@
-# Django settings for restfulwebapi project.
+# Django settings for restfulwebapisite project.
 
 import os
 
@@ -108,10 +108,10 @@ MIDDLEWARE_CLASSES = (
     'restfulwebapi.middleware.MIMETypeMiddleware',
 )
 
-ROOT_URLCONF = 'restfulwebapi.urls'
+ROOT_URLCONF = 'restfulwebapisite.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'restfulwebapi.wsgi.application'
+WSGI_APPLICATION = 'restfulwebapisite.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
