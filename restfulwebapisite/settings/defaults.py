@@ -38,7 +38,8 @@ TIME_ZONE = 'Europe/London'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+#LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-gb'
 
 SITE_ID = 1
 
@@ -133,6 +134,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'films',
     'restfulwebapi',
+    'accounts',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -163,3 +165,8 @@ LOGGING = {
         },
     }
 }
+
+#auth
+LOGIN_REDIRECT_URL = 'accounts:profile'
+LOGIN_URL = 'accounts:login'
+LOGOUT_URL = 'accounts:logout'

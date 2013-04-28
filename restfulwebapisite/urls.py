@@ -16,4 +16,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     
     url(r'^films/', include('films.urls', namespace='films', app_name='films')),
+    url(r'^accounts/', include('accounts.urls', namespace='accounts', app_name='accounts')),
 )
