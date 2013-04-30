@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-from films.models.commoninfo import CommonInfo
+from cinema.models.commoninfo import CommonInfo
 
 class Director(CommonInfo):
     

@@ -1,0 +1,8 @@
+{% extends "base.xhtml" %}
+
+{% block title %}Cinema{% endblock %}
+
+{% block content %}
+    <h1>Cinema!</h1>
+    <p><a href="{% url 'cinema:films_all' %}">Films</a></p>
+{% endblock %}

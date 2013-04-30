@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-from films.models import constants
+from cinema.models import constants
 
 class CommonInfo(models.Model):
     

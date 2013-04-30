@@ -4,8 +4,6 @@ import os
 
 PROJECT_PATH = os.path.abspath(os.path.join(os.path.join(os.path.dirname(__file__).replace('\\','/'), '..'), '..'))
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -132,9 +130,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'films',
-    'restfulwebapi',
     'accounts',
+    'restfulwebapi',
+    'cinema',
 )
 
 # A sample logging configuration. The only tangible logging

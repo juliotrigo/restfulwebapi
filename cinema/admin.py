@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""films admin."""
+"""Cinema admin."""
 
 # Some other options
     #list_display
@@ -13,9 +13,9 @@
 
 from django.contrib import admin
 
-from films.models import Film
-from films.models import Director
-from films.models import FilmDirector
+from cinema.models import Film
+from cinema.models import Director
+from cinema.models import FilmDirector
 
 class FilmAdmin(admin.ModelAdmin):
     list_filter = ['year']

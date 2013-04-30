@@ -7,12 +7,12 @@ from django.shortcuts import render_to_response
 from django.shortcuts import get_object_or_404
 from django.http import Http404
 
-from films.models import Film
+from cinema.models import Film
 
 @login_required
 def index(request):
-    """Films main page."""
-    return render_to_response('films/base_films.xhtml')
+    """Cinema main page."""
+    return render_to_response('cinema/base_cinema.xhtml')
 
 @login_required
 def films(request, id):
@@ -28,4 +28,4 @@ def films(request, id):
     except Film.DoesNotExist:
         raise Http404
     
-    return render_to_response('films/films.xhtml', context)
+    return render_to_response('cinema/films.xhtml', context)
