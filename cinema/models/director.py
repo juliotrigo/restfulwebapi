@@ -19,7 +19,7 @@ class Director(CommonInfo):
         return self.name
     
     class Meta:
-        app_label = 'films'
+        app_label = 'cinema'
 
 class FilmDirector(models.Model):
     
@@ -32,8 +32,8 @@ class FilmDirector(models.Model):
         return '%s by %s' % (self.film, self.director)
     
     class Meta:
-        app_label = 'films'
-        db_table = 'films_film_director'
+        app_label = 'cinema'
+        db_table = 'cinema_film_director'
         verbose_name = 'Film of director'
         verbose_name_plural = 'Films of directors'
         unique_together = ('film', 'director',)

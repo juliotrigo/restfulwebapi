@@ -20,7 +20,7 @@ class Film(CommonInfo):
         return self.title
     
     class Meta:
-        app_label = 'films'
+        app_label = 'cinema'
         index_together = [['year'],]
         ordering = ['title']
 
