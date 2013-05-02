@@ -168,3 +168,5 @@ LOGGING = {
 LOGIN_REDIRECT_URL = 'accounts:profile'
 LOGIN_URL = 'accounts:login'
 LOGOUT_URL = 'accounts:logout'
+
+AUTH_USER_MODEL = 'accounts.ExtendedUser'
