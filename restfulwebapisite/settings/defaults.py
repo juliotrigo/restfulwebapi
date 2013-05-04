@@ -1,6 +1,9 @@
-# Django settings for restfulwebapisite project.
+"""Django settings for restfulwebapisite project."""
 
 import os
+
+# To help us extend the defaults instead of overriding them with hardcoded values.
+from django.conf import global_settings as DEFAULT_SETTINGS
 
 PROJECT_PATH = os.path.abspath(os.path.join(os.path.join(os.path.dirname(__file__).replace('\\','/'), '..'), '..'))
 
@@ -164,9 +167,29 @@ LOGGING = {
     }
 }
 
-#auth
-LOGIN_REDIRECT_URL = 'accounts:profile'
-LOGIN_URL = 'accounts:login'
-LOGOUT_URL = 'accounts:logout'
+
+##################
+# AUTHENTICATION #
+##################
 
 AUTH_USER_MODEL = 'accounts.ExtendedUser'
+
+LOGIN_URL = 'accounts:login'
+
+LOGOUT_URL = 'accounts:logout'
+
+LOGIN_REDIRECT_URL = 'accounts:profile'
+
+
+####################
+# CORE             #
+####################
+
+DEFAULT_CONTENT_TYPE = 'application/xhtml+xml'
+
+# Add new context processors here
+TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS
+
+# First day of week, to be used on calendars
+# 0 means Sunday, 1 means Monday...
+FIRST_DAY_OF_WEEK = 1
