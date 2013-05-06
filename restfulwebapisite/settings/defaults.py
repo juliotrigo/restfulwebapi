@@ -172,7 +172,7 @@ LOGGING = {
 # AUTHENTICATION #
 ##################
 
-AUTH_USER_MODEL = 'accounts.ExtendedUser'
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 LOGIN_URL = 'accounts:login'
 
@@ -185,7 +185,7 @@ LOGIN_REDIRECT_URL = 'accounts:profile'
 # CORE             #
 ####################
 
-DEFAULT_CONTENT_TYPE = 'application/xhtml+xml'
+#DEFAULT_CONTENT_TYPE = 'application/xhtml+xml'
 
 # Add new context processors here
 TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS
