@@ -1,0 +1,116 @@
+[
+{
+    "pk": 1, 
+    "model": "cinema.film", 
+    "fields": {
+        "country": "US", 
+        "running_length": 175, 
+        "year": 1972, 
+        "title": "The Godfather"
+    }
+},
+{
+    "pk": 2, 
+    "model": "cinema.film", 
+    "fields": {
+        "country": "US", 
+        "running_length": 200, 
+        "year": 1974, 
+        "title": "The Godfather: Part II"
+    }
+},
+{
+    "pk": 3, 
+    "model": "cinema.film", 
+    "fields": {
+        "country": "US", 
+        "running_length": 163, 
+        "year": 1990, 
+        "title": "El Padrino. Parte III"
+    }
+},
+{
+    "pk": 4, 
+    "model": "cinema.film", 
+    "fields": {
+        "country": "US", 
+        "running_length": 102, 
+        "year": 1942, 
+        "title": "Casablanca"
+    }
+},
+{
+    "pk": 5, 
+    "model": "cinema.film", 
+    "fields": {
+        "country": "US", 
+        "running_length": 119, 
+        "year": 1941, 
+        "title": "Citizen Kane"
+    }
+},
+{
+    "pk": 1, 
+    "model": "cinema.director", 
+    "fields": {
+        "country": "US", 
+        "name": "Francis Ford Coppola"
+    }
+},
+{
+    "pk": 2, 
+    "model": "cinema.director", 
+    "fields": {
+        "country": "HU", 
+        "name": "Michael Curtiz"
+    }
+},
+{
+    "pk": 3, 
+    "model": "cinema.director", 
+    "fields": {
+        "country": "US", 
+        "name": "Orson Welles"
+    }
+},
+{
+    "pk": 1, 
+    "model": "cinema.filmdirector", 
+    "fields": {
+        "director": 2, 
+        "film": 4
+    }
+},
+{
+    "pk": 2, 
+    "model": "cinema.filmdirector", 
+    "fields": {
+        "director": 3, 
+        "film": 5
+    }
+},
+{
+    "pk": 3, 
+    "model": "cinema.filmdirector", 
+    "fields": {
+        "director": 1, 
+        "film": 3
+    }
+},
+{
+    "pk": 4, 
+    "model": "cinema.filmdirector", 
+    "fields": {
+        "director": 1, 
+        "film": 2
+    }
+},
+{
+    "pk": 5, 
+    "model": "cinema.filmdirector", 
+    "fields": {
+        "director": 1, 
+        "film": 1
+    }
+}
+]

@@ -10,6 +10,7 @@ ITALY = 'IT'
 US = 'US'
 UK = 'UK'
 HONG_KONG = 'HK'
+HUNGARY = 'HU'
 COUNTRY_CHOICES = (
     (FRANCE, 'France'),
     (SPAIN, 'Spain'),
@@ -17,4 +18,5 @@ COUNTRY_CHOICES = (
     (US, 'United States'),
     (UK, 'United Kingdom'),
     (HONG_KONG, 'Hong Kong'),
+    (HUNGARY, 'Hungary'),
 )

@@ -193,3 +193,12 @@ TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS
 # First day of week, to be used on calendars
 # 0 means Sunday, 1 means Monday...
 FIRST_DAY_OF_WEEK = 1
+
+############
+# FIXTURES #
+############
+
+# The list of directories to search for fixtures
+FIXTURE_DIRS = (
+    os.path.join(PROJECT_PATH, 'fixtures'),
+)
