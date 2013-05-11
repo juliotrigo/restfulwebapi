@@ -1,0 +1,19 @@
+{% extends "base.xhtml" %}
+{% load i18n %}
+
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Welcome to RESTfulWebAPI.com" %}</h1>
+    
+    <p>
+        <a href="{% url 'accounts:login' %}">{% trans "Log In" %}</a>
+    </p>
+    
+    <p>
+        <a href="{% url 'accounts:logout' %}">{% trans "Log Out" %}</a>
+    </p>
+    
+    <p>{% trans "Please find below the services currently available:" %}</p>
+    <h2><a href="{% url 'cinema:index' %}">{% trans "Cinema" %}</a></h2>
+{% endblock %}

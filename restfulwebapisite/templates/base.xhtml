@@ -4,14 +4,15 @@
 
 <html version="-//W3C//DTD XHTML 1.1//EN"
       xmlns="http://www.w3.org/1999/xhtml"
-      xml:lang="en"
+      xml:lang="{{ LANGUAGE_CODE }}"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xsi:schemaLocation="http://www.w3.org/1999/xhtml
                           http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
 >
     <head>
-        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
         <title>RESTful Web API - {% block title %}{% endblock %}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="language" content="{{ LANGUAGE_CODE }}" />
     </head>
     <body>
         <p>
