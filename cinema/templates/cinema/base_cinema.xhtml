@@ -1,9 +1,9 @@
 {% extends "base.xhtml" %}
 {% load i18n %}
 
-{% block title %}Cinema{% endblock %}
+{% block title %}{% trans "Cinema" %}{% endblock %}
 
 {% block content %}
-    <h1>Cinema!</h1>
-    <p><a href="{% url 'cinema:films_all' %}">Films</a></p>
+    <h1>{% trans "Cinema!" %}</h1>
+    <p><a href="{% url 'cinema:films_all' %}">{% trans "Films" %}</a></p>
 {% endblock %}

@@ -2,18 +2,18 @@
 {% load i18n %}
 
 {% block content %}
-    <h1>Films!</h1>
+    <h1>{% trans "Films!" %}</h1>
     
     <table>
         <tr>
-            <th>Title</th>
+            <th>{% trans "Title" %}</th>
         </tr>
         {% for film in films %}
             <tr>
                 <td>{{ film.title }}</td>
             </tr>
         {% empty %}
-            <tr>There are no films.</tr>
+            <tr>{% trans "There are no films." %}</tr>
         {% endfor %}
     </table>
 {% endblock %}
