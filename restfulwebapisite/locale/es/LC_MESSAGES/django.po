@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-12 21:41+0100\n"
-"PO-Revision-Date: 2013-05-12 17:36+0100\n"
+"POT-Creation-Date: 2013-05-18 20:48+0100\n"
+"PO-Revision-Date: 2013-05-18 20:50+0100\n"
 "Last-Translator: juliotrigo <juliotrigocom@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: settings/defaults.py:209
+#: settings/defaults.py:212
 msgid "English"
 msgstr "Inglés"
 
-#: settings/defaults.py:211
+#: settings/defaults.py:214
 msgid "Spanish"
 msgstr "Español"
 
@@ -61,27 +61,33 @@ msgstr "500 Internal Server Error"
 msgid "Server error. There's been a server error."
 msgstr "Error en el servidor. Ha habido un problema en el servidor."
 
-#: templates/home.xhtml:4
+#. Translators: Language selection: submit button.
+#: templates/base.xhtml:35
+msgid "Go"
+msgstr "Ir"
+
+#: templates/home.xhtml:7
 msgid "Home"
 msgstr "Inicio"
 
 #. Translators: This text will appear in all pages.
-#: templates/home.xhtml:8
+#: templates/home.xhtml:11
 msgid "Welcome to RESTfulWebAPI.com"
 msgstr "Bienvenido a RESTfulWebAPI.com"
 
-#: templates/home.xhtml:11
+#: templates/home.xhtml:14
 msgid "Log In"
 msgstr "Log In"
 
-#: templates/home.xhtml:15
+#: templates/home.xhtml:18
 msgid "Log Out"
 msgstr "Log Out"
 
-#: templates/home.xhtml:18
+#: templates/home.xhtml:23
 msgid "Please find below the services currently available:"
 msgstr "Por favor, encuentre debajo los servicios disponibles actualmente."
 
-#: templates/home.xhtml:19
+#: templates/home.xhtml:24
 msgid "Cinema"
 msgstr "Cine"
+

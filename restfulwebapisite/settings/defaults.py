@@ -197,8 +197,11 @@ LOGIN_REDIRECT_URL = 'accounts:profile'
 
 #DEFAULT_CONTENT_TYPE = 'application/xhtml+xml'
 
+# List of processors used by RequestContext to populate the context.
+# Each one should be a callable that takes the request object as its
+# only parameter and returns a dictionary to add to the context.
 # Add new context processors here
-TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS
+TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + ('accounts.context_processors.url', )
 
 # First day of week, to be used on calendars
 # 0 means Sunday, 1 means Monday...
