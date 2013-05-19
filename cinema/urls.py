@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+"""cinema urls."""
+
 from django.conf.urls import patterns, url
 
 urlpatterns = patterns('cinema',

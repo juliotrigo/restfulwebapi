@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Cinema admin."""
+"""cinema admin."""
 
 # Some other options
     #list_display

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Cinema constants."""
+"""cinema constants."""
 
 from __future__ import unicode_literals
 

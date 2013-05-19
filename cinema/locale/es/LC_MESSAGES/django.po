@@ -3,20 +3,92 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-18 20:48+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-05-19 21:21+0100\n"
+"PO-Revision-Date: 2013-05-19 21:23+0100\n"
+"Last-Translator: juliotrigo <juliotrigocom@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models/commoninfo.py:16
+msgid "country"
+msgstr "país"
+
+#: models/commoninfo.py:16
+msgid "Country."
+msgstr "País."
+
+#: models/director.py:16
+msgid "name"
+msgstr "nombre"
+
+#: models/director.py:16
+msgid "Director's name."
+msgstr "Nombre del director."
+
+#: models/director.py:17
+#: models/director.py:31
+#: models/film.py:25
+msgid "film"
+msgstr "película"
+
+#: models/director.py:24
+#: models/director.py:32
+msgid "director"
+msgstr "director"
+
+#: models/director.py:25
+msgid "directors"
+msgstr "directores"
+
+#. Translators: Film by director
+#: models/director.py:36
+#, python-format
+msgid "%(film)s by %(director)s"
+msgstr "%(film)s por %(director)s"
+
+#: models/director.py:42
+msgid "film of director"
+msgstr "película del director"
+
+#: models/director.py:43
+msgid "films of directors"
+msgstr "películas de directores"
+
+#: models/film.py:16
+msgid "title"
+msgstr "Título"
+
+#: models/film.py:16
+msgid "Film title."
+msgstr "Año de la película."
+
+#: models/film.py:17
+msgid "year"
+msgstr "año"
+
+#: models/film.py:17
+msgid "Film release date."
+msgstr "Fecha de estreno de la película."
+
+#: models/film.py:18
+msgid "running length"
+msgstr "duración"
+
+#: models/film.py:18
+msgid "Film duration."
+msgstr "Duración de la película."
+
+#: models/film.py:26
+msgid "films"
+msgstr "Películas"
 
 #: templates/cinema/base_cinema.xhtml:4
 msgid "Cinema"
@@ -41,3 +113,4 @@ msgstr "Título"
 #: templates/cinema/films.xhtml:16
 msgid "There are no films."
 msgstr "No hay películas."
+
