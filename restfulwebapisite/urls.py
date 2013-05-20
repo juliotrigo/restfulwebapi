@@ -17,5 +17,11 @@ urlpatterns = patterns('',
     
     url(r'^cinema/', include('cinema.urls', namespace='cinema', app_name='cinema')),
     url(r'^accounts/', include('accounts.urls', namespace='accounts', app_name='accounts')),
-    url(r'^i18n/', include('django.conf.urls.i18n')),
+    
+    #url(r'^i18n/', include('django.conf.urls.i18n')),
+)
+
+# Copied and changed from django.conf.urls.i18n
+urlpatterns += patterns('',
+    url(r'^i18n/setlang/$', 'accounts.views.custom_i18n', name='set_language'),
 )
