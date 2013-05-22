@@ -3,7 +3,7 @@
 """cinema views."""
 
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 from django.shortcuts import get_object_or_404
 from django.http import Http404
 
@@ -12,7 +12,7 @@ from cinema.models import Film
 @login_required
 def index(request):
     """Cinema main page."""
-    return render_to_response('cinema/base_cinema.xhtml')
+    return render(request, 'cinema/base_cinema.xhtml')
 
 @login_required
 def films(request, id):
@@ -28,4 +28,4 @@ def films(request, id):
     except Film.DoesNotExist:
         raise Http404
     
-    return render_to_response('cinema/films.xhtml', context)
+    return render(request, 'cinema/films.xhtml', dictionary=context)
