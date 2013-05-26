@@ -24,37 +24,66 @@
         <link rel="stylesheet" type="text/css" href="{{ base_css }}" />
     </head>
     <body>
-        <p>
-            <a href="{% url 'home' %}">RESTful Web API</a>
-        </p>
-        <div>
-            <form action="{% url 'set_language' %}" method="post">
-                <div>
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="{{ get_full_path }}" />
-                    <select name="language">
-                        {% get_language_info_list for LANGUAGES as langs %}
-                        {% for language in langs %}
-                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
-                                {{ language.name_local }} ({{ language.code }})
-                            </option>
-                        {% endfor %}
-                    </select>
-                    {# Translators: Language selection: submit button. #}
-                    <input type="submit" value="{% trans "Go" %}" />
-                </div>
-            </form>
+        <div class="page-header">
+            <div class="logo">
+                <a href="{% url 'home' %}">RESTful Web API</a>
+            </div>
+            <div class="motto">
+                REST, HATEOAS, HTTP, Python, Django... 
+            </div>
+            <div class="login">
+                <a href="{% url 'accounts:login' %}">{% trans "Log In" %}</a>
+                <a href="{% url 'accounts:logout' %}">{% trans "Log Out" %}</a>
+            </div>
+            <div class="language-selection">
+                <form action="{% url 'set_language' %}" method="post">
+                    <div>
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ get_full_path }}" />
+                        <select name="language">
+                            {% get_language_info_list for LANGUAGES as langs %}
+                            {% for language in langs %}
+                                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                                    {{ language.name_local }} ({{ language.code }})
+                                </option>
+                            {% endfor %}
+                        </select>
+                        {# Translators: Language selection: submit button. #}
+                        <input type="submit" value="{% trans "Go" %}" />
+                    </div>
+                </form>
+            </div>
         </div>
-        {% block content %}{% endblock %}
-        <p>
-            <a href="http://validator.w3.org/check?uri=referer">
-                <img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" />
-            </a>
-        </p>
-        <p>
-            <a href="http://www.djangoproject.com/">
-                <img src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif" alt="Powered by Django." title="Powered by Django." />
-            </a>
-        </p>
+        <div class="page-body">
+            <div class="menu">
+                Menu
+            </div>
+            <div class="content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <div id="top-footer" class="footer">
+            
+        </div>
+        <div id="mid-footer" class="footer">
+            <div id="logo-html">
+                <a href="http://validator.w3.org/check?uri=referer">
+                    <img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" />
+                </a>
+            </div>
+            <div id="logo-css">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                </a>
+            </div>          
+            <div id="logo-django">
+                <a href="http://www.djangoproject.com/">
+                    <img src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif" alt="Powered by Django." title="Powered by Django." />
+                </a>
+            </div>
+        </div>
+        <div id="bottom-footer" class="footer">
+            
+        </div>
     </body>
 </html>

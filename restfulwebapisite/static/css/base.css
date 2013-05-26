@@ -1,5 +1,143 @@
 @charset "UTF-8";
 
-body {
+html {
     font-family: Tahoma, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    
+    /* */
+    background: red;
+    /* */
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    
+    /* */
+    /* border: 1px solid; */
+    background: #FFFF66;
+    /* */
+}
+
+/********** HEADER **********/
+
+.page-header {
+    height: 300px;
+    
+    /* */
+    background: #66FF66;
+    /* */
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 29%;
+    height: 235px;
+    
+
+    text-align: right;
+    padding: 65px 55px 0px 0px;
+    font-size: 30px;
+    
+    
+    /* */
+    background-color: #FFAD00;
+    /* */
+}
+
+.motto {
+    position: absolute;
+    top: 30px;
+    left: 42%;
+    width: 15%;
+    height: 100px;
+    
+    padding: 10px;
+    
+    /* */
+    background: #CCFFCC;
+    /* */
+}
+
+.login {
+    position: absolute;
+    top: 0px;
+    left: 65%;
+    width: 15%;
+    height: 100px;
+    
+    padding: 10px;
+    
+    /* */
+    background: #CCFFCC;
+    /* */
+}
+
+.language-selection {
+    position: absolute;
+    top: 0px;
+    left: 85%;
+    width: 10%;
+    height: 100px;
+    
+    padding: 10px;
+    
+    /* */
+    background: #CCFFCC;
+    /* */
+}
+
+/********** CONTENT **********/
+
+.page-body {
+    position: relative;
+    margin: -150px auto 0px auto;
+    width: 90%;
+    
+    /* */
+    background: #CC6633;
+    /* */
+}
+
+.menu {
+
+}
+
+.content {
+
+}
+
+/********** FOOTER **********/
+
+.footer {
+
+}
+
+#top-footer {
+
+}
+
+#mid-footer {
+
+}
+
+#logo-html {
+    float: left;
+    margin: 0px 15px 0px 30px;
+}
+
+#logo-css {
+    float: left;
+    margin: 0px 15px 0px 15px;
+}
+
+#logo-django {
+    margin: 0px 15px 0px 15px;
+}
+
+#bottom-footer {
+
 }
