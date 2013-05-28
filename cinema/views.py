@@ -12,7 +12,7 @@ from cinema.models import Film
 @login_required
 def index(request):
     """Cinema main page."""
-    return render(request, 'cinema/base_cinema.xhtml')
+    return render(request, 'cinema/base_cinema.html')
 
 @login_required
 def films(request, id):
@@ -28,4 +28,4 @@ def films(request, id):
     except Film.DoesNotExist:
         raise Http404
     
-    return render(request, 'cinema/films.xhtml', dictionary=context)
+    return render(request, 'cinema/films.html', dictionary=context)
