@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* Background color: 72
    48
    30
@@ -27,7 +31,7 @@ a {
 
 .page-header {
     height: 300px;
-    background-color: rgb(69, 69, 69);
+    background-color: inherit;
 }
 
 .logo {
@@ -37,7 +41,7 @@ a {
     width: 29%;
     height: 235px;
     padding: 65px 55px 0px 0px;
-    text-align: right;    
+    text-align: right;
     background-color: #E34C26;
 }
 
@@ -71,7 +75,6 @@ a {
 }
 
 .login a {
-    text-decoration: underline;
     color: rgb(255, 255, 255);
 }
 
@@ -94,15 +97,21 @@ a {
     position: relative;
     margin: -150px auto 30px auto;
     width: 90%;
-    background-color: rgb(69, 69, 69);
+    background-color: transparent;
 }
 
 .menu {
     height: 70px;
     padding: 20px 20px 0px 20px;
-    border-bottom: 6px solid rgb(69, 69, 69);
     background-color: rgb(214, 214, 214);
     border-radius: 20px 20px 0px 0px;
+}
+
+.separator {
+    height: 6px;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
 }
 
 .content {
@@ -114,30 +123,30 @@ a {
 /********** FOOTER **********/
 
 #top-footer {
-    height: 100px;
+    height: 0px;
     background-color: rgb(51, 51, 51);
     color: rgb(221, 221, 221);
 }
 
 #mid-footer {
-    height: 100px;
+    height: 120px;
     background-color: rgb(51, 51, 51);
     color: rgb(221, 221, 221);
 }
 
 #logo-html5 {
     float: left;
-    margin: 0px 15px 0px 15px;
+    margin: 30px 15px 30px 30px;
 }
 
 #logo-django {
     float: left;
-    margin: 0px 15px 0px 15px;
+    margin: 30px 15px 30px 15px;
 }
 
 #logo-css {
     float: left;
-    margin: 0px 15px 0px 15px;
+    margin: 30px 15px 30px 15px;
 }
 
 #bottom-footer {
