@@ -10,26 +10,26 @@
 
 <html lang="{{ LANGUAGE_CODE }}">
     <head>
-        <title>RESTful Web API - {% block title %}{% endblock %}</title>
         <meta charset="UTF-8">
+        <title>RESTful Web API - {% block title %}{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{{ base_css }}" />
     </head>
     <body>
-        <header class="page-header">
-            <div class="logo">
+        <header id="page-header">
+            <div id="logo">
                 <a href="{% url 'home' %}">RESTful Web API</a>
             </div>
-            <div class="motto">
+            <div id="motto">
                 REST, HATEOAS, HTTP, Python, Django... 
             </div>
-            <div class="login">
+            <div id="login">
                 {% if user.is_authenticated  %}
                     <a href="{% url 'accounts:logout' %}">{% trans "Log Out" %}</a>
                 {% else %}
                     <a href="{% url 'accounts:login' %}">{% trans "Log In" %}</a>
                 {% endif %}
             </div>
-            <div class="language-selection">
+            <div id="language-selection">
                 <form action="{% url 'set_language' %}" method="post">
                     <div>
                         {% csrf_token %}
@@ -48,37 +48,76 @@
                 </form>
             </div>
         </header>
-        <div class="page-body">
+        <div id="page-body">
             <nav class="menu">
-                
+                <!--
+                <div id="menu-home" class="menu">
+                    <a href="">{% trans "Home" %}</a>
+                </div>
+                <div id="menu-examples" class="menu">
+                    <a href="">{% trans "Examples" %}</a>
+                </div>
+                <div id="menu-django-restful" class="menu">
+                    <a href="">{% trans "django-restfulwebapi" %}</a>
+                </div>
+                <div id="menu-blog" class="menu">
+                    <a href="">{% trans "Blog" %}</a>
+                </div>
+                -->
             </nav>
             <div class="separator"></div>
-            <div class="content">
+            <div id="content">
                 {% block content %}{% endblock %}
             </div>
         </div>
         <footer id="top-footer">
-            
-        </footer>
-        <footer id="mid-footer">
-            <div id="logo-html5">
-                <a href="http://www.w3.org/html/logo/">
-                    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
-                </a>
-            </div>
-            <div id="logo-django">
-                <a href="http://www.djangoproject.com/">
-                    <img src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif" alt="Powered by Django." title="Powered by Django." />
-                </a>
-            </div>
-            <div id="logo-css">
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-                </a>
-            </div>
+            <section id="logos">
+                <div id="logo-html5">
+                    <a href="http://www.w3.org/html/logo/">
+                        <img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
+                    </a>
+                </div>
+                <div id="logo-django">
+                    <a href="http://www.djangoproject.com/">
+                        <img src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif" alt="Powered by Django." title="Powered by Django." />
+                    </a>
+                </div>
+                <div id="logo-css">
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                </div>
+            </section>
+            <section id="links">
+                <h3>{% trans "Links" %}</h3>
+                <ul>
+                    <li><a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm">Representational State Transfer (REST)</a></li>
+                    <li><a href="http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven">REST APIs must be hypertext-driven</a></li>
+                    <li><a href="http://www.w3.org/Provider/Style/URI.html">Cool URIs don't change</a></li>
+                    <li><a href="http://restpatterns.org/">REST & WOA Wiki</a></li>
+                    <li><a href="http://blog.steveklabnik.com/posts/2011-07-03-nobody-understands-rest-or-http">Nobody Understands REST or HTTP</a></li>
+                    <li><a href="http://www.informit.com/articles/article.aspx?p=1566460">Versioning REST Services</a></li>
+                </ul>
+            </section>
+            <section id="site-info">
+                <h3>{% trans "Info" %}</h3>
+                <ul>
+                    <li><a href="https://github.com/juliotrigo">juliotrigo @ GitHub</a></li>
+                    <li><a href="https://bitbucket.org/juliotrigo">juliotrigo @ Bitbucket</a></li>
+                    <li><a href="https://twitter.com/juliotrigo">juliotrigo @ Twitter</a></li>
+                    <li><a href="">{% trans "Contact" %}</a></li>
+                    <li><a href="">{% trans "About" %}</a></li>
+                    <li><a href="">{% trans "Blog" %}</a></li>
+                </ul>
+            </section>
         </footer>
         <footer id="bottom-footer">
-            <span id="W3C-attribution">HTML5 Logo by <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a></span>
+            <section id="credits">
+                <ul>
+                    <li><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work by <a href="http://juliotrigo.com" property="http://creativecommons.org/ns#attributionName" rel="http://creativecommons.org/ns#attributionURL">juliotrigo</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</li>
+                    <li><span>HTML5 Logo by <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a></span></li>
+                </ul>
+            </section>
         </footer>
     </body>
 </html>

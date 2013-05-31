@@ -1,15 +1,16 @@
 @charset "UTF-8";
 
-html {
-    font-family: Tahoma, Arial, sans-serif;
+html, body, ol, ul {
     margin: 0px;
     padding: 0px;
+}
+
+html {
+    font-family: Tahoma, Arial, sans-serif;
     background-color: rgb(34, 34, 34);
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
     background-color: rgb(69, 69, 69);
 }
 
@@ -29,12 +30,12 @@ a:hover {
 
 /********** HEADER **********/
 
-.page-header {
+#page-header {
     height: 300px;
     background-color: inherit;
 }
 
-.logo {
+#logo {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -45,13 +46,13 @@ a:hover {
     background-color: #E34C26;
 }
 
-.logo a {
+#logo a {
     font-family: Verdana, Arial, sans-serif;
     font-size: 35px;
     color: rgb(255, 255, 255);
 }
 
-.motto {
+#motto {
     position: absolute;
     top: 30px;
     left: 42%;
@@ -59,10 +60,10 @@ a:hover {
     height: 80px;
     padding: 10px;
     background-color: rgb(240, 240, 240);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
 }
 
-.login {
+#login {
     position: absolute;
     top: 0px;
     right: 25%;
@@ -71,14 +72,14 @@ a:hover {
     padding: 10px;
     text-align: center;
     background-color: rgb(0, 146, 191);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
 }
 
-.login a {
+#login a {
     color: rgb(255, 255, 255);
 }
 
-.language-selection {
+#language-selection {
     position: absolute;
     top: 0px;
     right: 5%;
@@ -88,12 +89,12 @@ a:hover {
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 146, 191);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 /********** CONTENT **********/
 
-.page-body {
+#page-body {
     position: relative;
     margin: -150px auto 30px auto;
     width: 90%;
@@ -104,7 +105,7 @@ a:hover {
     height: 70px;
     padding: 20px 20px 0px 20px;
     background-color: rgb(214, 214, 214);
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .separator {
@@ -114,47 +115,80 @@ a:hover {
     background-color: transparent;
 }
 
-.content {
+#content {
     padding: 20px 20px 20px 20px;
     background-color: rgb(214, 214, 214);
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 /********** FOOTER **********/
 
-#top-footer {
-    height: 0px;
-    background-color: rgb(51, 51, 51);
-    color: rgb(221, 221, 221);
+footer h3 {
+    color: rgb(214, 214, 214);
 }
 
-#mid-footer {
-    height: 120px;
+footer li
+{
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+#top-footer {
+    height: 200px;
     background-color: rgb(51, 51, 51);
-    color: rgb(221, 221, 221);
+    /* color: rgb(221, 221, 221); */
+}
+
+footer#top-footer a {
+    color: rgb(153,153,153); /* #999 */
+}
+
+#logos {
+    position: absolute;
+    margin: 70px 0px 30px 0px;
+    left: 0%;
+    width: 33%;
+}
+
+#links {
+    position: absolute;
+    padding: 0px 0px 0px 70px;
+    left: 33%;
+    width: 34%;
+}
+
+#site-info {
+    position: absolute;
+    padding: 0px 0px 0px 70px;
+    left: 67%;
+    width: 33%;
 }
 
 #logo-html5 {
     float: left;
-    margin: 30px 15px 30px 30px;
+    margin: 0px 15px 0px 30px;
 }
 
 #logo-django {
     float: left;
-    margin: 30px 15px 30px 15px;
+    margin: 0px 15px 0px 15px;
 }
 
 #logo-css {
     float: left;
-    margin: 30px 15px 30px 15px;
+    margin: 0px 30px 0px 15px;
 }
 
 #bottom-footer {
-    height: 50px;
     background-color: rgb(34, 34, 34);
     color: rgb(199, 199, 199);
 }
 
-#W3C-attribution {
-    
+footer#bottom-footer a {
+    color: rgb(0, 146, 191);
+}
+
+#credits {
+    padding: 15px 15px 15px 15px;
 }
