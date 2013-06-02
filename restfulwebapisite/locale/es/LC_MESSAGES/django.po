@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-18 20:48+0100\n"
-"PO-Revision-Date: 2013-05-18 20:50+0100\n"
+"POT-Creation-Date: 2013-06-02 21:41+0100\n"
+"PO-Revision-Date: 2013-06-02 21:55+0100\n"
 "Last-Translator: juliotrigo <juliotrigocom@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: settings/defaults.py:212
+#: settings/defaults.py:213
 msgid "English"
 msgstr "Inglés"
 
-#: settings/defaults.py:214
+#: settings/defaults.py:215
 msgid "Spanish"
 msgstr "Español"
 
@@ -61,33 +61,63 @@ msgstr "500 Internal Server Error"
 msgid "Server error. There's been a server error."
 msgstr "Error en el servidor. Ha habido un problema en el servidor."
 
-#. Translators: Language selection: submit button.
-#: templates/base.xhtml:35
-msgid "Go"
-msgstr "Ir"
-
-#: templates/home.xhtml:7
-msgid "Home"
-msgstr "Inicio"
-
-#. Translators: This text will appear in all pages.
-#: templates/home.xhtml:11
-msgid "Welcome to RESTfulWebAPI.com"
-msgstr "Bienvenido a RESTfulWebAPI.com"
-
-#: templates/home.xhtml:14
-msgid "Log In"
-msgstr "Log In"
-
-#: templates/home.xhtml:18
+#: templates/base.html:27
 msgid "Log Out"
 msgstr "Log Out"
 
-#: templates/home.xhtml:23
+#: templates/base.html:29
+msgid "Log In"
+msgstr "Log In"
+
+#. Translators: Language selection: submit button.
+#: templates/base.html:46
+msgid "Go"
+msgstr "Ir"
+
+#: templates/base.html:55
+#: templates/home.html:4
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/base.html:58
+msgid "Examples"
+msgstr "Ejemplos"
+
+#: templates/base.html:61
+msgid "Django app"
+msgstr "Django app"
+
+#: templates/base.html:64
+#: templates/base.html.py:110
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/base.html:92
+msgid "Links"
+msgstr "Enlaces"
+
+#: templates/base.html:103
+msgid "Info"
+msgstr "Info"
+
+#: templates/base.html:108
+msgid "Contact"
+msgstr "Contacto"
+
+#: templates/base.html:109
+msgid "About"
+msgstr "Acerca"
+
+#. Translators: This text will appear in all pages.
+#: templates/home.html:8
+msgid "Welcome to RESTfulWebAPI.com"
+msgstr "Bienvenido a RESTfulWebAPI.com"
+
+#: templates/home.html:9
 msgid "Please find below the services currently available:"
 msgstr "Por favor, encuentre debajo los servicios disponibles actualmente."
 
-#: templates/home.xhtml:24
+#: templates/home.html:10
 msgid "Cinema"
 msgstr "Cine"
 

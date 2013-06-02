@@ -20,7 +20,7 @@
                 <a href="{% url 'home' %}">RESTful Web API</a>
             </div>
             <div id="motto">
-                REST, HATEOAS, HTTP, Python, Django... 
+                REST, HATEOAS, HTTP, API, Python, Django... 
             </div>
             <div id="login">
                 {% if user.is_authenticated  %}
@@ -48,22 +48,22 @@
                 </form>
             </div>
         </header>
-        <div id="page-body">
-            <nav class="menu">
-                <!--
-                <div id="menu-home" class="menu">
-                    <a href="">{% trans "Home" %}</a>
-                </div>
-                <div id="menu-examples" class="menu">
-                    <a href="">{% trans "Examples" %}</a>
-                </div>
-                <div id="menu-django-restful" class="menu">
-                    <a href="">{% trans "django-restfulwebapi" %}</a>
-                </div>
-                <div id="menu-blog" class="menu">
-                    <a href="">{% trans "Blog" %}</a>
-                </div>
-                -->
+        <div id="content-wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">{% trans "Home" %}</a>
+                    </li>
+                    <li>
+                        <a href="">{% trans "Examples" %}</a>
+                    </li>
+                    <li>
+                        <a href="">{% trans "Django app" %}</a>
+                    </li>
+                    <li>
+                        <a href="">{% trans "Blog" %}</a>
+                    </li>
+                </ul>
             </nav>
             <div class="separator"></div>
             <div id="content">
