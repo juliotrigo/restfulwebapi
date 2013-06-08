@@ -7,12 +7,14 @@
 
 {% load static from staticfiles %}
 {% static "css/base.css" as base_css %}
+{% static "js/httprequest.js" as httprequest_js %}
 
 <html lang="{{ LANGUAGE_CODE }}">
     <head>
         <meta charset="UTF-8">
         <title>RESTful Web API - {% block title %}{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{{ base_css }}" />
+        <script src="{{ httprequest_js }}" type='text/javascript'></script>
     </head>
     <body>
         <header id="page-header">
@@ -61,7 +63,7 @@
                         <a href="">{% trans "Django app" %}</a>
                     </li>
                     <li>
-                        <a href="">{% trans "Blog" %}</a>
+                        <a href="">RESTfulWebAPI</a>
                     </li>
                 </ul>
             </nav>
@@ -105,8 +107,8 @@
                     <li><a href="https://github.com/juliotrigo">juliotrigo @ GitHub</a></li>
                     <li><a href="https://bitbucket.org/juliotrigo">juliotrigo @ Bitbucket</a></li>
                     <li><a href="https://twitter.com/juliotrigo">juliotrigo @ Twitter</a></li>
+                    <li><a href="">{% trans "About" %} juliotrigo</a></li>
                     <li><a href="">{% trans "Contact" %}</a></li>
-                    <li><a href="">{% trans "About" %}</a></li>
                     <li><a href="http://juliotrigo.wordpress.com/category/programming/">{% trans "Blog" %}</a></li>
                 </ul>
             </section>
