@@ -122,7 +122,7 @@ nav {
 
 #content {
     padding: 20px 20px 20px 20px;
-    background-color: #BED1FE;  /* rgb(214, 214, 214) #B6CBFD #BED1FE */
+    background-color: rgb(214, 214, 214);  /* rgb(214, 214, 214) #B6CBFD #BED1FE */
     border-radius: 0px 0px 10px 10px;
 }
 
