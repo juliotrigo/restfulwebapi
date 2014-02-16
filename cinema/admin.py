@@ -17,12 +17,15 @@ from cinema.models import Film
 from cinema.models import Director
 from cinema.models import FilmDirector
 
+
 class FilmAdmin(admin.ModelAdmin):
     list_filter = ['year']
     search_fields = ['title']
 
+
 class DirectorAdmin(admin.ModelAdmin):
     list_filter = ['name']
+
 
 class FilmDirectorAdmin(admin.ModelAdmin):
     list_filter = ['director']
